@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Kali UX Control Center
+Comment=Desktop experience enhancements for Kali Linux XFCE
+Exec=kali-ux gui
+Icon=preferences-desktop
+Terminal=false
+Categories=Settings;Utility;
+StartupNotify=true

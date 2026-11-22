@@ -1,0 +1,11 @@
+Kali UX 0.3.0-alpha.6 — integrated feature prototype
+
+Core: XDG configuration/path handling, atomic private config writes, feature registry, platform capability checks, shared X11 window-management adapter, explicit GTK3 namespace loader and diagnostics.
+UI: GTK3 theme-aware Control Center with separated page builders, feature preferences, Windows, Clipboard, Applications, Productivity, Appearance, Gestures, Privacy, Diagnostics and About.
+Features: SwipeSwitch (current public gesture parser/recognizer/controller behavior) with a supervised Control Center process lifecycle, shared gesture input/action routing/conflict scan, Task View, Window Peek, Snap Assist, Clipboard History, Quick Panel, timed Focus Tools, XDG Application Launcher and identity-aware Layout Memory.
+
+Verification: 88 passed, 0 skipped; Python compilation, CLI smoke tests, Ruff lint and Ruff formatting passed in the build container. See docs/VERIFICATION_REPORT.md.
+
+Not verified: physical touchpad and libinput permissions/coexistence, live GTK/XFCE behavior, multi-monitor geometry, fullscreen interactions, package lifecycle, Wayland. The gesture provider still uses libinput debug-events and requires target-desktop validation.
+
+Not shipped: Debian package, signed APT repository, autostart entry, systemd user unit or privileged helper.
